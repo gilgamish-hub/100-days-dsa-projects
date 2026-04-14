@@ -1,27 +1,35 @@
-# Browser History Manager (DSA Project)
+# Browser History Manager (Doubly Linked List)
 
-## 🚀 Overview
-This project simulates browser history navigation using a Doubly Linked List.
-It supports back/forward navigation, timestamp tracking, and file persistence.
+## 🚀 Problem
+Design a browser history system supporting:
+- Visit new pages
+- Back & Forward navigation
+
+## 🧠 Approach
+Used Doubly Linked List:
+- `prev` → back navigation
+- `next` → forward navigation
+- `current` pointer tracks active page
 
 ## ✨ Features
-- Doubly Linked List implementation
-- Back & Forward navigation
-- Timestamp for each visit
-- LRU-based history limit (max 50 pages)
-- Save history to file
-- Load history on restart
+- Timestamp tracking
+- LRU-based history limit (50 pages)
+- File persistence (save/load)
 - Search functionality
 - Clear history
+- Interactive CLI
 
-## 🧠 Concepts Used
-- Data Structures (Doubly Linked List)
-- Pointers
-- File Handling (C++)
-- LRU Cache concept
+## ⚡ Complexity
+- Visit: O(1)
+- Back/Forward: O(1)
+- Search: O(n)
 
-## ▶️ How to Run
+## 🛠 Tech
+- C++
+- Doubly Linked List
+- File Handling
 
-```bash
-g++ main.cpp -o history
-./history
+## 📌 Learnings
+- Real-world use of linked lists
+- Memory management (deletion)
+- Designing user-driven systems
