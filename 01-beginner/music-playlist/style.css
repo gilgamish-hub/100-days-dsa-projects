@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Inter, sans-serif;
+    background: #0f172a;
+    color: #e5e7eb;
+}
+
+/* Layout */
+.app {
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 320px;
+    background: #111827;
+    padding: 20px;
+    border-right: 1px solid #1f2937;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+/* Add box */
+.add-box {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.add-box input {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    background: #1f2937;
+    color: white;
+}
+
+.add-box button {
+    padding: 8px 12px;
+    border: none;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+}
+
+/* Playlist */
+ul {
+    list-style: none;
+}
+
+li {
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+li:hover {
+    background: #1f2937;
+}
+
+.active {
+    background: #2563eb;
+}
+
+/* Player */
+.player {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Now playing */
+.now p {
+    color: #9ca3af;
+    margin-bottom: 5px;
+}
+
+.now h1 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+/* Controls */
+.controls button {
+    margin: 0 10px;
+    padding: 10px 16px;
+    border: none;
+    background: #1f2937;
+    color: white;
+    cursor: pointer;
+}
+
+.controls button:hover {
+    background: #2563eb;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Playlist Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Playlist</h2>
+
+        <div class="add-box">
+            <input type="text" id="songInput" placeholder="Add song...">
+            <button onclick="addSong()">Add</button>
+        </div>
+
+        <ul id="playlist"></ul>
+    </div>
+
+    <!-- Main Player -->
+    <div class="player">
+        <div class="now">
+            <p>Now Playing</p>
+            <h1 id="nowPlaying">None</h1>
+        </div>
+
+        <div class="controls">
+            <button onclick="playPrev()">Prev</button>
+            <button onclick="playNext()">Next</button>
+            <button onclick="deleteSong()">Delete</button>
+        </div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
