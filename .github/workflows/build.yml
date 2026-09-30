@@ -1,0 +1,18 @@
+name: build
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  compile:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compile every project
+        run: |
+          set -e
+          for f in 01-beginner/*/main.cpp 01-beginner/smart-contact-book/contact_book.cpp; do
+            echo "Compiling $f"
+            g++ -std=c++17 -Wall -o /tmp/out "$f"
+          done
